@@ -1,0 +1,8 @@
+#!python
+import time
+
+for x in range(50):
+  print "{} - hello".format(x)
+  time.sleep(2)
+
+print "Finished"

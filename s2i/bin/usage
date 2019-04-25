@@ -1,0 +1,12 @@
+#!/bin/bash -e
+cat <<EOF
+This is the python-hello S2I image:
+To use it, install S2I: https://github.com/openshift/source-to-image
+
+Sample invocation:
+
+s2i build https://github.com/kevin-anderson-redhat/s2i-python-hello.git python-hello s2i-python-hello
+
+You can then run the resulting image via:
+docker run s2i-python-hello
+EOF
